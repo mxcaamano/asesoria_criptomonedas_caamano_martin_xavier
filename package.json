@@ -1,0 +1,23 @@
+{
+  "name": "portal_de_cryptos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxcaamano/asesoria_criptomonedas_caamano_martin_xavier.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxcaamano/asesoria_criptomonedas_caamano_martin_xavier/issues"
+  },
+  "homepage": "https://github.com/mxcaamano/asesoria_criptomonedas_caamano_martin_xavier#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
