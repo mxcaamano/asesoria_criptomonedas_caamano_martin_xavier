@@ -1,0 +1,17 @@
+@import 'listas.scss';
+
+$textos:(
+    color: nth($colores, 3)
+);
+
+$titulos:(
+    color: nth($colores, 2)
+);
+
+.texto{
+    color: map-get($textos,color);
+}
+
+.titulo{
+    color: map-get($titulos,color);
+}

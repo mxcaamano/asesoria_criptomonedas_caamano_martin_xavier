@@ -1,0 +1,29 @@
+// .navbar-logo{
+//     margin-right: 1rem;
+//     font-size: 1.25rem;
+//     text-decoration: none;
+//     white-space: nowrap;
+//     color: #2e9d8f;
+// }
+@import '../base/listas';
+
+.borde-ticker{
+    -webkit-box-shadow:0 10px 20px -6px nth($colores, 1);
+    -moz-box-shadow:0 10px 20px -6px nth($colores, 1);
+    box-shadow:0 10px 20px -6px nth($colores, 1);
+}
+
+.navbar-toggler{
+    border-color: nth($colores,1);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28136, 219, 194, 100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+    &:hover,
+    &:focus {
+      color: nth($colores,5);
+    }
+  }
