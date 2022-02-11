@@ -1,7 +1,7 @@
-.borde-ticker {
-  -webkit-box-shadow: 0 10px 20px -6px #88dbc2;
-  -moz-box-shadow: 0 10px 20px -6px #88dbc2;
-  box-shadow: 0 10px 20px -6px #88dbc2;
+.ticker-shadow {
+  -webkit-box-shadow: 0 3px 15px 1px #88dbc2;
+  -moz-box-shadow: 0 3px 15px 1px #88dbc2;
+  box-shadow: 0 3px 15px 1px #88dbc2;
 }
 
 .navbar-toggler {
@@ -16,6 +16,56 @@
   color: #2bf8bb;
 }
 
+.menu-anim a {
+  padding: 0.5em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.menu-anim a:before, .menu-anim a:after {
+  position: relative;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu-anim a:before {
+  bottom: -30px;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #2bf8bb;
+}
+.menu-anim a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.menu-anim a:hover:before {
+  opacity: 1;
+  width: 100%;
+}
+.menu-anim .menu-anim-a a:before {
+  opacity: 1;
+  width: 100%;
+}
+.menu-anim a:hover:after, .menu-anim .menu-anim-a a:after {
+  max-width: 100%;
+}
+
+.borde-top {
+  -webkit-box-shadow: 0 -15px 20px -6px #88dbc2;
+  -moz-box-shadow: 0 -15px 20px -6px #88dbc2;
+  box-shadow: 0 -15px 20px -6px #88dbc2;
+  border-top: 1px solid #88dbc2;
+}
+
 .texto {
   color: #24584d;
 }
@@ -24,17 +74,68 @@
   color: #4eaa93;
 }
 
-.deer-colors nav {
+.btn-view, .btn-dwd, .btn-form {
+  border: 2px solid #4eaa93;
+  color: #88dbc2;
+  margin: 0.5em;
+  font: inherit;
+  line-height: 1;
+  transition: 0.25s;
+  text-decoration: none;
+}
+.btn-view:hover, .btn-dwd:hover, .btn-form:hover, .btn-view:focus, .btn-dwd:focus, .btn-form:focus {
+  border-color: #2bf8bb;
+  color: #2bf8bb;
+  box-shadow: 0 0.5em 0.5em -0.4em #2bf8bb;
+  transform: translateY(-0.25em);
+}
+
+.btn-form {
+  background: none;
+  padding: 1em 2em;
+}
+
+.btn-dwd {
+  background-color: black;
+  padding: 1em 2.5em;
+}
+
+.btn-view {
+  padding: 0.25rem 0.5rem;
+  margin: 0.2em;
+  font-size: 0.875rem;
+}
+
+.deer-theme {
+  color: #88dbc2;
+}
+.deer-theme nav {
   background-color: black;
   padding-top: 0.15rem;
   padding-bottom: 0.15rem;
 }
-.deer-colors nav button {
+.deer-theme nav button {
   color: #88dbc2;
   background-color: black;
 }
-.deer-colors nav a {
+.deer-theme nav .active {
+  color: #2bf8bb;
+}
+.deer-theme nav a {
   color: #88dbc2;
+}
+.deer-theme .form-control {
+  border: 2px solid #4eaa93;
+  border-radius: 0px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.deer-theme .form-control:focus {
+  border-color: #2bf8bb;
+  box-shadow: inset 0 1px 1px #88dbc2, 0 0 8px #2bf8bb;
+  outline: 0;
+}
+.deer-theme .card {
+  border-radius: 0;
 }
 
 a {

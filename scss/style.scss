@@ -1,9 +1,12 @@
-// @import "../libs/bootstrap/scss/bootstrap";
 @import 'components/header.scss';
+@import 'components/footer.scss';
 @import 'base/listas.scss';
 @import 'base/maps.scss';
+@import 'base/extends.scss';
+@import 'base/mixins.scss';
 
-.deer-colors{
+.deer-theme{
+    color: nth($colores,1);
     nav{
         background-color: nth($colores, 4);
         padding-top: 0.15rem;
@@ -12,10 +15,27 @@
             color: nth($colores,1);
             background-color: nth($colores, 4);
             }
+            .active{
+                color: nth($colores,5)
+                }
             a{
             color: nth($colores,1);
             }
         }
+    .form-control{
+        border: 2px solid nth($colores,2);
+        border-radius: 0px;
+        transition: border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+
+        &:focus{           
+            border-color: nth($colores,5);
+            box-shadow: inset 0 1px 1px nth($colores,1), 0 0 8px nth($colores,5);
+            outline: 0;
+    }
+        }
+    .card{
+        border-radius: 0;
+    }
     }
     a{
         color: nth($colores,1);
@@ -26,7 +46,3 @@
             color: nth($colores,3);
         }
     }
-
-    
-    
-
