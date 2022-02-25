@@ -3,14 +3,24 @@
 @import 'base/listas.scss';
 @import 'base/maps.scss';
 @import 'base/extends.scss';
-@import 'base/mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap');
 
 .deer-theme{
+    font-family: 'Titillium Web','Roboto','IBM Plex Sans', sans-serif;
     color: nth($colores,1);
     nav{
         background-color: nth($colores, 4);
         padding-top: 0.15rem;
         padding-bottom: 0.15rem;
+        .navbar-brand{
+            color: nth($colores,1);
+    transition: 0.25s;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+    color: nth($colores,5);
+    }
+    }
         button{
             color: nth($colores,1);
             background-color: nth($colores, 4);
@@ -46,3 +56,14 @@
             color: nth($colores,3);
         }
     }
+
+.logo-crypto{
+        border-radius: 50%;
+        transition: 0.25s;
+        text-decoration: none;
+    &:hover,
+    &:focus { 
+    box-shadow: 0 0 2em 0em nth($colores,5);
+    transform: translateY(-0.5em);
+    }
+}

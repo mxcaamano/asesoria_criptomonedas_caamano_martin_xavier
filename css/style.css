@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap");
 .ticker-shadow {
   -webkit-box-shadow: 0 3px 15px 1px #88dbc2;
   -moz-box-shadow: 0 3px 15px 1px #88dbc2;
@@ -66,12 +67,11 @@
   border-top: 1px solid #88dbc2;
 }
 
-.texto {
-  color: #24584d;
-}
-
-.titulo {
+.deer-theme h1, .deer-theme h2, .deer-theme h3, .deer-theme h4, .deer-theme h5 {
   color: #4eaa93;
+}
+.deer-theme p {
+  color: #24584d;
 }
 
 .btn-view, .btn-dwd, .btn-form {
@@ -98,6 +98,7 @@
 .btn-dwd {
   background-color: black;
   padding: 1em 2.5em;
+  display: inline-block;
 }
 
 .btn-view {
@@ -107,12 +108,21 @@
 }
 
 .deer-theme {
+  font-family: "Titillium Web", "Roboto", "IBM Plex Sans", sans-serif;
   color: #88dbc2;
 }
 .deer-theme nav {
   background-color: black;
   padding-top: 0.15rem;
   padding-bottom: 0.15rem;
+}
+.deer-theme nav .navbar-brand {
+  color: #88dbc2;
+  transition: 0.25s;
+  text-decoration: none;
+}
+.deer-theme nav .navbar-brand:hover, .deer-theme nav .navbar-brand:focus {
+  color: #2bf8bb;
 }
 .deer-theme nav button {
   color: #88dbc2;
@@ -147,6 +157,20 @@ footer {
 }
 footer span {
   color: #24584d;
+}
+
+.logo-crypto {
+  border-radius: 50%;
+  transition: 0.25s;
+  text-decoration: none;
+}
+.logo-crypto:hover, .logo-crypto:focus {
+  box-shadow: 0 0 2em 0em #2bf8bb;
+  transform: translateY(-0.5em);
+}
+
+.fixed-top-2 {
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

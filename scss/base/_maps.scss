@@ -8,10 +8,10 @@ $titulos:(
     color: nth($colores, 2)
 );
 
-.texto{
-    color: map-get($textos,color);
-}
-
-.titulo{
-    color: map-get($titulos,color);
+.deer-theme{
+    h1, h2, h3, h4, h5{
+        color: map-get($titulos,color);
+        }
+    p{    color: map-get($textos,color);
+        }
 }

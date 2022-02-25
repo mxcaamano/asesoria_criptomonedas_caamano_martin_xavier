@@ -26,7 +26,8 @@
 .btn-dwd{
     @extend %botones;
     background-color: nth($colores,4);
-    padding: 1em 2.5em;     
+    padding: 1em 2.5em; 
+    display: inline-block;    
 }
 
 .btn-view{

@@ -22,8 +22,8 @@
         <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="../assets/images/logos/deerlogo.png" alt="" width="55" height="55" class="d-inline-block align-text-center">
+            <a class="navbar-brand mx-2" href="../index.html">
+              <img class="mx-2" src="../assets/images/logos/deerlogo.png" alt="" width="55" height="55" class="d-inline-block align-text-center">
             Deer Crypto
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,6 @@
             </button>
             <div class="collapse navbar-collapse mx-3" id="navbarNavAltMarkup">
               <div class="navbar-nav menu-anim mb-1">
-                <a class="nav-link" href="../index.html">Home</a>
                 <a class="nav-link" href="news.html">Noticias</a>
                 <a class="nav-link active" aria-current="page" href="market.html">Mercado</a>
                 <a class="nav-link" href="learning.html">eBooks</a>
@@ -42,71 +41,77 @@
         </nav>
       </header>
       <div class="cryptohopper-web-widget sticky-top bd-highlight ticker-shadow" data-id="2" data-text_color="#ffffff" data-background_color="#000000" data-theme="custom" data-realtime="on" data-ticker_speed="119" data-round="0"></div>
-      <div class="px-4 pt-3 my-3 text-center">
-        <h1 class="display-4 fw-bold titulo">Mercado</h1>
+      <div class="px-4 pt-4 my-3 text-center">
+        <h1 class="display-4 fw-bold ">Mercado</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4 texto">Con la tecnologia brindada en colaboracion con Cryptohopper usted puede acceder a visualizar y analizar en tiempo real las 1000 monedas de mayor capitalizacion de mercado</p>
+          <p class="lead mb-4 ">Con la tecnologia brindada en colaboracion con Cryptohopper usted puede acceder a visualizar y analizar en tiempo real las 1000 monedas de mayor capitalizacion de mercado</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
           </div>
         </div>
         <div class="overflow-hidden">
           <div class="container px-3">
-            <div class="cryptohopper-web-widget" data-id="1" data-table_title="Top 1000 CryptoCurrencies" data-table_columns="rank,name,price_usd,market_cap_usd,percent_change_24h,weekly" data-realtime="on" data-table_length="26"></div>
+            <div class="cryptohopper-web-widget mb-5" data-id="1" data-table_title="Top 1000 CryptoCurrencies" data-table_columns="rank,name,price_usd,market_cap_usd,percent_change_24h,weekly" data-realtime="on" data-table_length="26" data-chart_color="#88dbc2"></div>
           </div>
         </div>
-        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <h1 class="display-4 fw-bold ">Top 3 Capitalizacion de Mercado</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-5">Conoce las criptomonedas mas comercializadas del momento, y aprende a invertir en ellas!</p>
+        </div>
+        <div class="overflow-hidden">
+          <div class="container px-3">
+            <div class="cryptohopper-web-widget" data-id="3" data-text_color="#88dbc2" data-background_color="#000000" data-fullwidth="0" data-coins="bitcoin,ethereum,tether" data-theme="custom" data-realtime="on" data-round="0"></div>
+          </div>
+        </div>
+        <div class="container col-xl-10 px-4 py-5">
             <div class="row align-items-center g-lg-5 py-5">
-              <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="display-4 fw-bold lh-1 mb-3 titulo">Bitcoin</h1>
-                <p class="col-lg-10 fs-4 texto">Bitcoin es una criptomoneda descentralizada presentada originalmente en un documento técnico en 2008 por una persona, o grupo de personas, utilizando el alias Satoshi Nakamoto. Se lanzó poco después, en enero de 2009.
+              <div class="col-lg-6 text-center text-lg-start my-5">
+                <h1 class="display-4 fw-bold lh-1 mb-3 ">Bitcoin</h1>
+                <p class="col-lg-12 fs-4 ">Bitcoin es una criptomoneda descentralizada presentada originalmente en un documento técnico en 2008 por una persona, o grupo de personas, utilizando el alias Satoshi Nakamoto. Se lanzó poco después, en enero de 2009.
                     El bitcoin es una moneda en línea peer-to-peer, lo que significa que todas las transacciones ocurren directamente entre los participantes, iguales e independientes, de la red sin la necesidad de que ningún intermediario les de permiso o les facilite las operaciones. 
                     Bitcoin se creó, de acuerdo con las propias palabras de Nakamoto, para permitir que “los pagos en línea se pudieran enviar directamente de una parte a otra sin pasar por una institución financiera".</p>
               </div>
               <div class="mx-auto col-lg-6">
-                <div class="cryptohopper-web-widget" data-id="8" data-coins="bitcoin" data-realtime="on"></div>
+                <a href="https://bitcoin.org/"><img class="logo-crypto" src="../assets/images/logos/bitcoin.svg" width="350" height="350" alt=""></a>
               </div>
             </div>
           </div>
-          <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="container col-xl-10 px-4 py-5">
             <div class="row align-items-center g-lg-5 py-5">
-              <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="display-4 fw-bold lh-1 mb-3 titulo">Ethereum</h1>
-                <p class="col-lg-10 fs-4 texto">Ethereum es un sistema blockchain de código abierto descentralizado que incluye su propia criptomoneda, Ether. 
+              <div class="col-lg-6 text-center text-lg-start my-5">
+                <h1 class="display-4 fw-bold lh-1 mb-3 ">Ethereum</h1>
+                <p class="col-lg-12 fs-4 ">Ethereum es un sistema blockchain de código abierto descentralizado que incluye su propia criptomoneda, Ether. 
                     ETH funciona como plataforma para otras numerosas criptomonedas, así como para la ejecución de contratos inteligentes descentralizados.
                     Ethereum fue descrito por primera vez en un whitepaper de 2013 por Vitalik Buterin. Buterin, junto con otros cofundadores, aseguraron la financiación para el proyecto en una venta pública en línea en el verano de 2014 y lanzaron oficialmente la cadena de bloques el 30 de julio de 2015.</p>
               </div>
               <div class="mx-auto col-lg-6">
-                <div class="cryptohopper-web-widget" data-id="8" data-coins="ethereum" data-realtime="on"></div>
+                <a href="https://ethereum.org/"><img class="logo-crypto" src="../assets/images/logos/ethereum.svg" width="350" height="350" alt=""></a>
               </div>
             </div>
           </div>
-          <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="container col-xl-10 px-4 py-5">
             <div class="row align-items-center g-lg-5 py-5">
-              <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="display-4 fw-bold lh-1 mb-3 titulo">Tether(USDT)</h1>
-                <p class="col-lg-10 fs-4 texto">Tether (USDT) es una moneda digital con un valor destinado a ser un reflejo del dólar estadounidense. 
+              <div class="col-lg-6 text-center text-lg-start my-5">
+                <h1 class="display-4 fw-bold lh-1 mb-3 ">Tether(USDT)</h1>
+                <p class="col-lg-12 fs-4 ">Tether (USDT) es una moneda digital con un valor destinado a ser un reflejo del dólar estadounidense. 
                     Lanzada en 2014, la idea detrás de Tether era crear una criptomoneda estable o "stablecoin" que se pueda usar como dólares digitales. 
                     Los Tethers están anclados o "atados" al precio del dólar estadounidense.
                     Si bien Tether inicialmente usó Omni Layer de la red Bitcoin como protocolo de transporte, ahora está disponible como un token ERC20 en Ethereum. En resumen, Tether se emite en las cadenas de bloques de Bitcoin (Omni y Liquid Protocol), Ethereum, EOS y Tron.</p>
               </div>
               <div class="mx-auto col-lg-6">
-                <div class="cryptohopper-web-widget" data-id="8" data-coins="tether" data-realtime="on"></div>
+                <a href="https://tether.to/"><img class="logo-crypto" src="../assets/images/logos/tether.svg" width="350" height="350" alt=""></a>
               </div>
             </div>
           </div>
         </div>
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 borde-top">
             <div class="col-md-4 d-flex align-items-center">
-              <a href="/" class="mb-md-0 text-muted text-decoration-none lh-1">
                 <img class="mx-3" src="../assets/images/logos/deerlogo.png" alt="deercrypto" width="40" height="40" >
-              </a>
-              <span>© 2022 Deer Crypto, LLC</span>
+              <span>© 2022 Deer Crypto</span>
             </div>
-        
             <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
-              <li class="mx-2"><a class="text-muted" href="#"><img class="bi" src="../assets/images/logos/twlogo.svg" width="30" height="30"></a></li>
-              <li class="mx-2"><a class="text-muted" href="#"><img class="bi" src="../assets/images/logos/iglogo.svg" width="30" height="30"></a></li>
-              <li class="mx-2"><a class="text-muted" href="#"><img class="bi" src="../assets/images/logos/fblogo.svg" width="30" height="30"></a></li>
+              <li class="mx-3"><a class="text-muted" href="https://twitter.com/" target="_blank"><img class="bi" src="../assets/images/logos/twlogo.svg" width="25" height="25"></a></li>
+              <li class="mx-3"><a class="text-muted" href="https://instagram.com/" target="_blank"><img class="bi" src="../assets/images/logos/iglogo.svg" width="25" height="25"></a></li>
+              <li class="mx-3"><a class="text-muted" href="https://facebook.com/" target="_blank"><img class="bi" src="../assets/images/logos/fblogo.svg" width="25" height="25"></a></li>
             </ul>
           </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
