@@ -1,3 +1,4 @@
+// Imports
 @import 'components/header.scss';
 @import 'components/footer.scss';
 @import 'base/listas.scss';
@@ -5,6 +6,7 @@
 @import 'base/extends.scss';
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap');
 
+// Estilos generales de Tema
 .deer-theme{
     font-family: 'Titillium Web','Roboto','IBM Plex Sans', sans-serif;
     color: nth($colores,1);
